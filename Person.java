@@ -3,7 +3,8 @@ package Persons;
 public class Person {
 	private double height, shoesize;
 	private int age;
-	private String name, jobTitle;
+	protected String name;
+	private String jobTitle;
 
 	public Person(double height, double shoesize, int age, String name, String jobTitle) {
 		this.height = height;
@@ -17,7 +18,9 @@ public class Person {
 		this.height = height;
 		this.name = name;
 	}
-
+	public Person() {
+		
+	}
 	public void greet() {
 		System.out.println("Welcome " + name);
 	}
@@ -30,5 +33,46 @@ public class Person {
 			System.out.println("your feet are normal, Good job!");
 		}
 	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public double getShoesize() {
+		return shoesize;
+	}
+
+	public void setShoesize(double shoesize) {
+		this.shoesize = shoesize;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+	
 	
 }
