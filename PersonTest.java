@@ -32,6 +32,12 @@ public class PersonTest {
 //		bob.feetSize();
 //		hiru.greet();
 //		hiru.feetSize();
+		rhys.greet();
+		gerald.greet();
+		gerald.feetSize();
+		bob.feetSize();
+		hiru.greet();
+		hiru.feetSize();
 	}
 
 }
