@@ -1,6 +1,11 @@
 package Persons;
 
 public class Person {
+	@Override
+	public String toString() {
+		return "Person [age=" + age + ", name=" + name + ", jobTitle=" + jobTitle + "]";
+	}
+
 	private double height, shoesize;
 	private int age;
 
