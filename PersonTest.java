@@ -1,9 +1,13 @@
 package Persons;
 
-public class PersonTest {
+import java.util.ArrayList;
+import java.util.List;
 
+public class PersonTest {
+	public static List<Person> People = new ArrayList<Person>();
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Person bob = new Person (175, 14, 21, "Bob", "Student");
 		Person rhys = new Person(170,"Rhys");
 		Person gerald = new Person(150, 10, 40, "Gerald", "Manager");
@@ -24,8 +28,20 @@ public class PersonTest {
 		giles.greet();
 		giles.farmLocation();
 		peter.greet();
-		System.out.println(giles.toString());
-		System.out.println(peter.toString());
+		People.add(bob);
+		People.add(rhys);
+		People.add(gerald);
+		People.add(hiru);
+		People.add(giles);
+		People.add(peter);
+		People.add((Person)paul);
+		People.add(simon);
+		People.stream()
+        .forEach(x -> System.out.println(x));
+
+//
+//		System.out.println(giles.toString());
+//		System.out.println(peter.toString());
 //		rhys.greet();
 //		gerald.greet();
 //		gerald.feetSize();
