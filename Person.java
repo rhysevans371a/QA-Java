@@ -8,8 +8,12 @@ public class Person {
 
 	private double height, shoesize;
 	private int age;
+
 	protected String name;
 	private String jobTitle;
+
+	private String name, jobTitle;
+
 
 	public Person(double height, double shoesize, int age, String name, String jobTitle) {
 		this.height = height;
@@ -23,9 +27,13 @@ public class Person {
 		this.height = height;
 		this.name = name;
 	}
+
 	public Person() {
 		
 	}
+
+
+
 	public void greet() {
 		System.out.println("Welcome " + name);
 	}
@@ -38,6 +46,7 @@ public class Person {
 			System.out.println("your feet are normal, Good job!");
 		}
 	}
+
 
 	public double getHeight() {
 		return height;
@@ -79,5 +88,6 @@ public class Person {
 		this.jobTitle = jobTitle;
 	}
 	
+
 	
 }
